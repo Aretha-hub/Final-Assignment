@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maria Kotze Gardens</title>
+    <link rel="stylesheet" href="styles_index.css" />
+  </head>
+  <body>
+    <div class="spinner-overlay"></div>
+    <div class="spinner"></div>
+
+    <!--Header Section-->
+    <header>
+      <img class="logo" src="./Img/Logo.png" alt="logo" />
+      <nav>
+        <ul class="nav_links">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./testimonials.html">Testimonials</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </nav>
+      <a class="cta" href="./contact.html"><button>Contact</button></a>
+    </header>
+    <!--Above the fold-->
+    <section class="container-fold">
+      <div class="image-container">
+        <img
+          class="fold-img"
+          src="./Img/flowers.png"
+          alt="Image of African Daisy"
+        />
+      </div>
+      <div class="text-container">
+        <h2>Utilizing Native Flora for Sustainable Water Management</h2>
+        <h4>
+          Through the harmonious blend of functionality, aesthetics, and
+          botanical expertise, we inspire a greater appreciation for outdoor
+          spaces, enticing people to spend more time in nature.
+        </h4>
+      </div>
+    </section>
+    <!--CTA images section-->
+    <section class="container">
+      <div class="image-container">
+        <img
+          src="./Img/Rectangle 13.jpg"
+          alt="Image of custom landscape text"
+        />
+        <button>Custom Garden</button>
+      </div>
+      <div class="image-container">
+        <img src="./Img/Waterfall.jpg" alt="Image of waterfall garden" />
+        <button>Waterfall Garden</button>
+      </div>
+      <div class="image-container">
+        <img
+          src="./Img/Rectangle 18.jpg"
+          alt="Image of corporate stone garden"
+        />
+        <button>Corporate Garden</button>
+      </div>
+    </section>
+    <!--Testimonials section-->
+    <section class="testimonials-container">
+      <h1>
+        Maria’s latest free library lesson on Indigenous plants and the best
+        summer plants to use in 2023
+      </h1>
+      <div class="image-container">
+        <img
+          src="./Img/Projects.png"
+          alt="Image of Maria in a nursery garden"
+        />
+      </div>
+      <button>Testimonials</button>
+      <div class="image-container">
+        <img src="./Img/Testimonial 2.png" alt="Image of Testimonial" />
+      </div>
+    </section>
+    <script>
+ // Select the spinner element from the DOM
+document.querySelector('.spinner').addEventListener('animationend', function() {
+ // This event fires when the animation on the spinner ends
+ 
+ // Select the spinner and overlay elements from the DOM
+ document.querySelector('.spinner').style.display = 'none';
+ document.querySelector('.spinner-overlay').style.display = 'none';
+ // Hide the spinner and overlay by setting their display style to 'none'
+});
+  </script>
+  </body>
+</html>

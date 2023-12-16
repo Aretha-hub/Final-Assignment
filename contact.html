@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="./JS/main.js"></script>
+</head>
+<body>
+    <div class="spinner-overlay"></div>
+    <div class="spinner"></div>
+     <!--Header Section-->
+     <header>
+        <img class="logo" src="./Img/Logo.png" alt="logo" />
+        <nav>
+          <ul class="nav_links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./testimonials.html">Testimonials</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </nav>
+        <a class="cta" href="./contact.html"><button>Contact</button></a>
+      </header>
+      <!--Contact Form-->
+      <h2 class="Form_heading">We would love to hear from you!</h2> 
+      
+      <form id="contactForm">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" required></textarea><br>
+        
+        <input type="submit" value="Submit">
+      </form>
+      <script>
+        // Select the spinner element from the DOM
+       document.querySelector('.spinner').addEventListener('animationend', function() {
+        // This event fires when the animation on the spinner ends
+        
+        // Select the spinner and overlay elements from the DOM
+        document.querySelector('.spinner').style.display = 'none';
+        document.querySelector('.spinner-overlay').style.display = 'none';
+        // Hide the spinner and overlay by setting their display style to 'none'
+       });
+         </script>
+</body>
+</html>

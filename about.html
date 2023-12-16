@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="spinner-overlay"></div>
+    <div class="spinner"></div>
+     <!--Header Section-->
+     <header>
+        <img class="logo" src="./Img/Logo.png" alt="logo" />
+        <nav>
+          <ul class="nav_links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./testimonials.html">Testimonials</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </nav>
+        <a class="cta" href="./contact.html"><button>Contact</button></a>
+      </header>
+         <h2 class="About_heading">Maria Kotze</h2> 
+      <div class="image-container">
+        <div class="green-square"></div>
+        <img src="./Img/Maria 2.jpg" alt="Image of the landscaper and owner Maria" />
+      </div>
+      <h1 class="centered-heading">Mission</h1>
+      <blockquote class="large-quote">
+        "By combining function and beauty with botanical knowledge we are able to
+        create a desire to spend more time outdoors. The garden is seen as an
+        extra living room. Proportion, color, balance and textures are important.
+        I like to maintain both indigenous as well as exotic plants in the garden
+        space..."
+   </blockquote>
+      <script>
+        // Select the spinner element from the DOM
+       document.querySelector('.spinner').addEventListener('animationend', function() {
+        // This event fires when the animation on the spinner ends
+        
+        // Select the spinner and overlay elements from the DOM
+        document.querySelector('.spinner').style.display = 'none';
+        document.querySelector('.spinner-overlay').style.display = 'none';
+        // Hide the spinner and overlay by setting their display style to 'none'
+       });
+         </script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="./JS/main.js" ></script>
+</head>
+<body>
+    <div class="spinner-overlay"></div>
+    <div class="spinner"></div>
+     <!--Header Section-->
+     <header>
+        <img class="logo" src="./Img/Logo.png" alt="logo" />
+        <nav>
+          <ul class="nav_links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./testimonials.html">Testimonials</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </nav>
+        <a class="cta" href="./contact.html"><button>Contact</button></a>
+      </header>
+      <h2 class="Testimonial_heading">Testimonials from our wondeful clients!</h2> 
+      
+      <div class="testimonials-container">
+        <div class="testimonial">
+          <img src="./Img/Testimonial 11.png" alt="Sandra Harley testimonial">
+          <h3>Sandra Harley</h3>
+          <p> Working with Maria Kotze was a delight!<br/> Their custom landscape design transformed my space into a captivating oasis.
+           </p>
+        </div>
+
+        <div class="testimonial">
+          <img src="./Img/Testimonial 22.png" alt="Image of  Simone Woo">
+          <h3>Simone Woo</h3>
+          <p>Best Garden Maintenance Services in the Western Cape!</p>
+        </div>
+
+        <div class="testimonial">
+          <img src="./Img/Testimonial 3.png" alt="Image of Alison Santiago">
+          <h3>Alison Santiago</h3>
+          <p>Maria Kotze exceeded our corporate expectations,<br/>transforming our outdoor spaces into an aesthetically pleasing environment.</p>
+        </div>
+
+        
+        <div class="testimonial">
+          <img src="./Img/Testimonial 4.png" alt="Image of Timothy October">
+          <h3>Timothy October</h3>
+          <p>My wife and I love this desert landscaping! Perfect for our dry climate</p>
+        </div>
+
+        
+        <div class="testimonial">
+          <img src="./Img/Testimonial 5.png" alt="Image of Mavis Johnson">
+          <h3>Mavis Johnson</h3>
+          <p>Patient, Kind and fast servic.Best low maintenance garden!</p>
+        </div>
+
+       </div>
+
+      <script>
+        // Select the spinner element from the DOM
+       document.querySelector('.spinner').addEventListener('animationend', function() {
+        // This event fires when the animation on the spinner ends
+        
+        // Select the spinner and overlay elements from the DOM
+        document.querySelector('.spinner').style.display = 'none';
+        document.querySelector('.spinner-overlay').style.display = 'none';
+        // Hide the spinner and overlay by setting their display style to 'none'
+       });
+
+         // Testimonials
+  let testimonialIndex = 0;
+const testimonials = document.querySelectorAll('.testimonial');
+
+function showTestimonial() {
+ testimonials.forEach(testimonial => {
+   testimonial.style.display = 'none';
+ });
+
+ testimonials[testimonialIndex].style.display = 'block';
+ testimonialIndex = (testimonialIndex + 1) % testimonials.length;
+}
+
+showTestimonial();
+setInterval(showTestimonial, 3000);
+
+         </script>
+</body>
+</html>
